@@ -2,8 +2,8 @@ import os
 import pyttsx3
 engine = pyttsx3.init()
 
-os.environ['SPOTIPY_CLIENT_ID'] = 'b7853f9173184630bb167909d35b39e2'
-os.environ['SPOTIPY_CLIENT_SECRET'] = '89a4062f80e3434f805bce9334af307f'
+os.environ['SPOTIPY_CLIENT_ID'] = 'INSERT HERE'
+os.environ['SPOTIPY_CLIENT_SECRET'] = 'INSERT HERE'
 
 import spotipy
 import time
@@ -14,7 +14,7 @@ def sendamessage(playlistname):
     engine.say("need to send a message to " + str(playlistname[1]))
     engine.runAndWait()
 
-playlist1 = ['spotify:playlist:2P0AHxkTi9EDfWJvHIoHEH','lucia']
+playlist1 = ['spotify:playlist:URI','NAME']
 spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
 f = open("playlist1number.txt","r")
