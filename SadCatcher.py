@@ -29,7 +29,7 @@ while True:
         print("not the same as last run")
         f.close()
         w = open("playlist1number.txt","w")
-        w.write(songtotal['total'])
+        w.write(str(songtotal['total']))
         w.close()
         f = open("playlist1number.txt","r")
         storedtotal = int(f.read())
